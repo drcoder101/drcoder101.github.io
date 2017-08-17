@@ -31,8 +31,10 @@ p {
 	100%{color: #e89b22;}
 }
 footer {
-	width: 0;
-	height: 0;
+	width: 100%;
+	padding: 2px cyan;
+	border-top: 2px;
+	background-color: grey;
 	position: fixed;
 	bottom: 0;
 	left: 0;
