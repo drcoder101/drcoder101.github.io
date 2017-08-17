@@ -32,8 +32,8 @@ p {
 }
 footer {
 	width: 100%;
-	padding: 2px cyan;
-	border-top: 2px;
+	padding: 5px;
+	border-top: 2px cyan;
 	background-color: grey;
 	position: fixed;
 	bottom: 0;
