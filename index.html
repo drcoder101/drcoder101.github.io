@@ -3,6 +3,26 @@
 <head>
 </head>
 <body>
+<style>
+body {
+	animation: bodyanimate 5s alternate;
+	animation-iteration-count: infinite;
+	}
+@keyframes bodyanimate {
+	0%{background-color: blue;}
+	
+	25%{background-color: orange;}
+	
+	50%{background-color: green;}
+	
+	75%{background-color: red;}
+	
+	100%{background-color: yellow;}
+	}
+#header {
+	
+	}
+</style>
   <div id = "Header"></div>
   <button id = "rockpaperscissors">Click this button to play rock paper scissors</button>
   <script>
@@ -50,7 +70,6 @@ if(inputlower == "scissors" && xoutput == "rock") {
 };
 };
   </script>
-  <style>
-  </style>
+  
 </body>
 </html>
