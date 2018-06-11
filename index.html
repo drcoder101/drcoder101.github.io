@@ -3,18 +3,54 @@
 <head>
 </head>
 <body>
-<link rel = "stylesheet" type = "text/css" href = "website2.css">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-<p>Hello and welcome to this website</p>
-<hr style = "color:blue" height = 30px;>
-<div id = "box"></div>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-  <footer id = "footer2">By: drcoder101</footer>
+  <div id = "Header"></div>
+  <button id = "rockpaperscissors">Click this button to play rock paper scissors</button>
+  <script>
+    window.onload = function() {
+     var rockpaperscissors = document.getElementById("rockpaperscissors");
+      rockpaperscissors.onclick = function() {
+var input;
+var userscore;
+var AIscore;
+var xoutput;
+input = prompt("Rock, paper, or scissors");
+var inputlower = input.toLowerCase();
+var x = Math.floor(Math.random() * 3);
+//0 equals paper 1 equals rock 2 eqauls scissors
+if(x == 0) {
+	xoutput = "paper";
+}
+if(x == 1) {
+	xoutput = "rock";
+}
+if(x == 2) {
+	xoutput = "scissors";
+}
+if(inputlower == xoutput) {
+	alert("You tied with the A.I.");
+};
+if(inputlower == "paper" && xoutput == "scissors") {
+	alert("You got beat")
+}
+if(inputlower == "paper" && xoutput == "rock") {
+	alert("You beat the A.I.")
+}
+if(inputlower == "rock" && xoutput == "scissors") {
+	alert("You beat the A.I.");
+}
+if(inputlower == "rock" && xoutput == "paper") {
+	alert("You got beat");
+}
+if(inputlower == "scissors" && xoutput == "paper") {
+	alert("You beat the A.I.")
+};
+if(inputlower == "scissors" && xoutput == "rock") {
+	alert("You got beat")
+}
+};
+};
+  </script>
+  <style>
+  </style>
 </body>
 </html>
