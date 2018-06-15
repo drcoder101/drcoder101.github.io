@@ -4,6 +4,7 @@
 	<title>BOI</title>
 	</head>
 	<body>
+		<h1><bold id='boldtext1'>Welcome to my website!</bold></h1>
 		<style>
 			body {
 				background: url('https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/f/f0/Boi_sponge.jpg/revision/latest?cb=20170115200131'); 	
@@ -51,6 +52,17 @@
 				position: fixed;
 				left: 600px;
 				bottom: 0px;
+			}
+			#bold {
+				animation: boldtextanimate 5s alternate;
+				animation-iteration-count: infinite
+			}
+			@keyframes boldtextanimate {
+				0%{color: blue; border: dotted red;}
+				
+				50%{color: red; border: dashed green;}
+				
+				100%{color: green; border: solid blue;}
 			}
 		</style>
 		<button id = "Sololearn"><a href = "https://www.sololearn.com">Sololearn</a></button>
