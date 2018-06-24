@@ -6,7 +6,7 @@
 	<body>
 		<h1 align = "center"><bold id='boldtext1'>Welcome to my website!</bold></h1>
 		<div id = "line1"></div>
-		<button id = "rockpaperscissors"><p id = "text">Click me to play rock paper or scissors</p></button>
+		<button id = "rockpaperscissors">Click me to play rock paper or scissors</button>
 		<style>
 			#text {
 				color: white	
@@ -89,7 +89,7 @@
 		<script>
 			window.onload = function() {
 				var rockpaperscissors = document.getElementById('rockpaperscissors');
-				rockpaperscissors.onclick = function() {
+				rockpaperscissors.onclick = function(input, computer) {
 					var computer;
 					var input;
 					input = prompt("Rock, paper, or scissors")
