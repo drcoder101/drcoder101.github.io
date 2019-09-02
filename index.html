@@ -17,9 +17,9 @@
 		<button id = "button" onclick = "hello()">Click me fer fun</button>
 		<script>
 			window.onload = function() {
-				function hello(x, y ,z, a) {
-					x = prompt("boi");
-					y = prompt("Num");
+				x = prompt("boi");
+				y = prompt("Num");
+				function hello(z, a) {
 					document.getElementById("image").src = String(x);
 					z = Math.floor(Math.random() * Number(y));
 					document.getElementById("image").width = z;
