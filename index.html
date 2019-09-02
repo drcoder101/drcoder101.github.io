@@ -17,11 +17,12 @@
 		<br>
 		<button id = "button" onclick = "hello()">Click me fer fun</button>
 		<button id = "functioonal" onclick = "destroy()">Click to stop the image from moving</button>
+		<button id = "loop" onclick = "quick()">Click this to start the program</button>
 		<script>
 			window.onload = function() {
-				//x = prompt("boi");
-				y = prompt("Num");
 				function hello(z, a) {
+					//x = prompt("boi");
+					y = prompt("Num");
 					document.getElementById("image").src = String(x);
 					z = Math.floor(Math.random() * Number(y));
 					document.getElementById("image").width = z;
@@ -35,7 +36,18 @@
 				function destroy() {
 					document.getElementById("image").src = "";
 				}
+				function quick() {
+					setInterval(hello, 100);	
+				}
 			}
 		</script>
+		<br>
+		<br>
+		<br>
+		<li>><bold>Links:</bold>
+			<ul><a href = "https:/code.sololearn.com">Sololearn</a></ul>
+			<ul><a href = "https://fonts.google.com">Google Fonts</a></ul>
+		</li>
+		
 	</body>
 </html>
