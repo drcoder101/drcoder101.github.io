@@ -14,7 +14,9 @@
 		<h1 align = "middle">Hello bois</h1>
 		<hr>
 		<img id = "image" src = "">
+		<br>
 		<button id = "button" onclick = "hello()">Click me fer fun</button>
+		<button id = "functioonal" onclick = "destroy()">Click to stop the image from moving</button>
 		<script>
 			window.onload = function() {
 				x = prompt("boi");
@@ -24,12 +26,15 @@
 					z = Math.floor(Math.random() * Number(y));
 					document.getElementById("image").width = z;
 					a = Math.floor(Math.random() * 500);
-					document.getElementById("image").height = 500;
+					document.getElementById("image").height = a;
 					if (z > 500) {
 						z = 500;
 					}
 				}
 				setInterval(hello, 100);
+				function destroy() {
+					document.getElementById("image").src = "";
+				}
 			}
 		</script>
 	</body>
